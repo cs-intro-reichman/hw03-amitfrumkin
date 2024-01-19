@@ -18,10 +18,11 @@ public class LowerCase {
         for(int i = 0 ; i < s.length() ; i++){
             char letter = s.charAt(i) ;
 
+            // #feedback x = x + n equivalent to x += n
             if ((letter >= 'A') && (letter <= 'Z') ){
-                answer = answer + (char) (letter + 32) ;
+                answer += (char) (letter + 32) ;
             }else{
-                answer = answer + letter ; 
+                answer += letter ; 
             }
         }
         
