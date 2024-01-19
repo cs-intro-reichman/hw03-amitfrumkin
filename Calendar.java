@@ -17,8 +17,8 @@ public class Calendar {
 	public static void main(String args[]) {
 		int currentYear = Integer.parseInt(args[0]); 
 	 	while (year < currentYear) {
-
-			while(month <13){
+			// #feedback: in context of months, it might be clearer to readers to write the condition like this:
+			while(month <= 12){
 
 				nDaysInMonth = nDaysInMonth(month,year) ;
 				for(int j = 1; j<= nDaysInMonth; j++){
@@ -112,18 +112,4 @@ public class Calendar {
 	}
 }
 
-/*for(dayOfWeek =2 ; dayOfWeek <= 7 ; dayOfWeek)
-		for(dayOfMonth= 1 ; dayOfMonth <= nDaysInMonth(month,year) ; dayOfMonth++){
-			if(dayOfWeek=1){
-				System.out.println(dayOfMonth + "/" + month + "/" + year + "sunday")
-			}else{
-				System.out.println(dayOfMonth + "/" + month + "/" + year) 
-			}
-
-						
-		}
-		for(month = 1 ; month <= 12 ; month++)
-		for(year = 1900; year <2000 ; year++)
-		if(dayOfWeek=1 && dayOfMonth= 1 ){
-			firstSundaysCounter++ ; 
-		}*/
+// #feedback: try to avoid keep historical implemantations in your code
