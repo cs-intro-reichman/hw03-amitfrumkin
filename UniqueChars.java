@@ -20,7 +20,8 @@ public class UniqueChars {
             char letter = s.charAt(i) ;
             
             if (letter == ' ' || answer.indexOf(letter) == -1){
-                answer = answer + letter ;
+                // #feedback x = x + n equivalent to x += n
+                answer += letter ;
             }
         }
 
